@@ -26,14 +26,14 @@ func main() {
 	req := texttospeechpb.SynthesizeSpeechRequest{
 		// Set the text input to be synthesized.
 		Input: &texttospeechpb.SynthesisInput{
-			InputSource: &texttospeechpb.SynthesisInput_Text{Text: "人間は安心しても反復横跳びするんだな。自動でバックアップされていたみたい。作者のランタンも上げないといけないから。いやん。"},
+			InputSource: &texttospeechpb.SynthesisInput_Text{Text: "2"},
 		},
 		// Build the voice request, select the language code ("en-US") and the SSML
 		// voice gender ("neutral").
 		Voice: &texttospeechpb.VoiceSelectionParams{
-			LanguageCode: "ja-JP",
+			LanguageCode: "en-US",
 			// SsmlGender:   texttospeechpb.SsmlVoiceGender_NEUTRAL,
-			Name: "ja-JP-Neural2-D",
+			Name: "en-US-Neural2-F",
 		},
 		// Select the type of audio file you want returned.
 		AudioConfig: &texttospeechpb.AudioConfig{
