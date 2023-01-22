@@ -33,7 +33,7 @@ func main() {
 		Voice: &texttospeechpb.VoiceSelectionParams{
 			LanguageCode: "ja-JP",
 			// SsmlGender:   texttospeechpb.SsmlVoiceGender_NEUTRAL,
-			Name: "ja-JP-Standard-A",
+			Name: "ja-JP-Neural2-D",
 		},
 		// Select the type of audio file you want returned.
 		AudioConfig: &texttospeechpb.AudioConfig{
