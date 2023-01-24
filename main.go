@@ -26,7 +26,7 @@ func main() {
 	req := texttospeechpb.SynthesizeSpeechRequest{
 		// Set the text input to be synthesized.
 		Input: &texttospeechpb.SynthesisInput{
-			InputSource: &texttospeechpb.SynthesisInput_Text{Text: "彼のランタンもあげないといけないから"},
+			InputSource: &texttospeechpb.SynthesisInput_Text{Text: "帰ってきたよ"},
 		},
 		// Build the voice request, select the language code ("en-US") and the SSML
 		// voice gender ("neutral").
