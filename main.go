@@ -26,14 +26,14 @@ func main() {
 	req := texttospeechpb.SynthesizeSpeechRequest{
 		// Set the text input to be synthesized.
 		Input: &texttospeechpb.SynthesisInput{
-			InputSource: &texttospeechpb.SynthesisInput_Text{Text: "私は、"},
+			InputSource: &texttospeechpb.SynthesisInput_Text{Text: "Stand by. User data, Input. Game start. finish"},
 		},
 		// Build the voice request, select the language code ("en-US") and the SSML
 		// voice gender ("neutral").
 		Voice: &texttospeechpb.VoiceSelectionParams{
-			LanguageCode: "ja-JP",
+			LanguageCode: "en-GB",
 			// SsmlGender:   texttospeechpb.SsmlVoiceGender_NEUTRAL,
-			Name: "ja-JP-Neural2-D",
+			Name: "en-GB-Neural2-B",
 		},
 		// Select the type of audio file you want returned.
 		AudioConfig: &texttospeechpb.AudioConfig{
